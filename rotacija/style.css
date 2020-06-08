@@ -1,0 +1,28 @@
+body{
+    background-image: url(pozadina.jpg);
+}
+.sunce{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 180px;
+    height: 180px;
+}
+.zemlja{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 0%;
+    transform: translateX(-100%) translateY(-50%) rotate(0deg);
+    animation: rotacija 10s ease-in-out forwards;
+    transform-origin: calc(100% + 90px) 40px;
+}
+@keyframes rotacija {
+    0% {
+      transform: translateX(-100%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-100%) translateY(-50%) rotate(180deg);
+    }
+  }

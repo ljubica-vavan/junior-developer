@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="naslov">BMI kalkulator</h1>
+
+    <p class="tekst">
+        Indeks tjelesne mase (engl. Body mass index, -BMI) je visinsko-težinski pokazatelj uhranjenosti pojedinca i validan je za sve osobe starije od 20 godina. 
+        BMI prikazuje odnos mase i visine tijela, međutim ne uzima u obzir tjelesnu građu, pa je njegova upotreba ograničena. Ukoliko se intenzivno bavite sportom 
+        i imate visok udio mišićne mase, može se desiti da se Vaš BMI indeks nalazi u kategoriji prekomjerne tjelesne mase. 
+    </p>
+
+    <form action="" class="forma" id="forma">
+
+        <fieldset class="unos" id="unos">
+            Vaša težina (kg):<input type="text" name="tezina" class="tezina" id="tezina"> <br>
+            Vaša visina (cm):<input type="text" name="visina" class="visina" id="visina"> <br>
+            <input type="button" class="button" value="Izračunaj" onClick="izracunajBMI()"><br />
+        </fieldset>
+        <!--
+        <fieldset id="spol"> Spol:
+            <input type="radio" value="female" id="female">
+            <label for="female">Ženski</label>
+            <input type="radio" value="male" id="male">
+            <label for="male">Muški</label>
+        </fieldset>
+        -->
+
+        <fieldset class="bmiIndeks">
+            <p>Vaš BMI:</p><br> 
+            <input type="number" name="BMI" class="BMI" id="BMI"><br>
+            <input type="text"  name='rezultat' class="rezultat" id="rezultat">
+        </fieldset>
+
+    </form>
+    <script src="myScript.js"></script>
+</body>
+</html>
+ 
