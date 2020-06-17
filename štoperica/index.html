@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= "timeDisplay" id="timeDisplay">00:00:00</div>
+<button class= "start" id="start" onclick="start()">Start</button>
+<button class="reset" id="reset" onclick="reset()">Reset</button>
+<script>
+
+//elementi 
+var timeDisplay = document.getElementById('timeDisplay');
+var dugmeStart = document.getElementById('start');
+var dugmeReset = document.getElementById('reset');
+
+//varijable
+var interval;
+var INTERVAL = 1000;
+var startTime;
+
+//funkcija start
+function start(){
+    startTime = new Date();
+    interval = setInterval(stopwatch, INTERVAL);
+}
+
+//funkcija odbrojavanje
+function stopwatch(){
+    time = (new Date().getTime() - startTime.getTime()) / 1000;
+
+    var ms = Math.floor(time % 1000);
+    var s = Math.floor(time % 60);
+    var m = Math.floor(time / 60) % 60;
+    var h = Math.floor(time / (60*60));
+
+    timeDisplay.innerHTML = (h > 9 ? h : ("0" + h)) + ":" + 
+    (m > 9 ? m : ("0" + m)) + ":" + 
+    (s > 9 ? s : ("0" + s)) + "." + ms;
+}
+
+
+
+//funkcija reset
+
+//funkcija stop
+
+</script>
+</body>
+</html>
