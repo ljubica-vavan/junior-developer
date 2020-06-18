@@ -6,7 +6,7 @@ const getUserChoice = userInput => {
     console.log('invalid choice');
   };
 };
-
+ 
 function getComputerChoice () {
    let randomNumber = Math.floor(Math.random() * 3);
    switch (randomNumber) {
