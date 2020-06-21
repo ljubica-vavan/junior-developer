@@ -1,6 +1,12 @@
 .timeDisplay{
+    position: absolute;
     
 }
 .start, .reset {
+    position: absolute;
+    left: 35%;
 
+}
+.body {
+    align-content: center;
 }
